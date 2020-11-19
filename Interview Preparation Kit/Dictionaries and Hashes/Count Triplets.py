@@ -92,7 +92,7 @@ def countTriplets(arr, r):
         if (lhs in leftMap):
             countLeft = leftMap[lhs]
             
-        count += countLeft * countRight;
+        count += countLeft * countRight
         leftMap[val] = leftMap[val] + 1 if val in leftMap else 1
         
     return count
